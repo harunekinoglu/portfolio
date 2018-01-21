@@ -1,1 +1,0 @@
-# harunEkinoglu.github.io
