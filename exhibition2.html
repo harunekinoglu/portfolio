@@ -15,6 +15,9 @@
 <link rel="stylesheet" href="filterButton.css">
 <!-- my JS -->
 <script src="filterButton.js"></script>
+
+<!-- w3 css -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
 <title>Space Across Scales | Harun Ekinoglu</title>
 </head>
@@ -112,7 +115,7 @@
    Exhibition: 2009/4 Project Exhibition at the International Milan Furniture Fair and Design Week" Salone del Mobile 2009" Milan,Italy  
    <br>
    <p style="font-size:12px">
-   With the support from the Italian-Turkish Cultural Protocol and Bilkent University, Assist. Prof. Dr. Cihangir İstek and his six students, Rona Binay, Ekin Birol, Can Gürsu, Gül Nazlıaka, Jale Sarı and Cansın Yetkin from the Faculty of Art, Design and Architecture were invited to participate in a project called MILANOMIFAMALE (Milan Hurts Me) during International Milan Furniture Fair and Design Week "Salone del Mobile 2009" - a prestigious event held in the city considered to be the Mecca for the design world.
+   With the support from the Italian-Turkish Cultural Protocol and Bilkent University, Assistant Prof. Dr. Cihangir Istek with Harun Ekinoglu and six other students from the Faculty of Art, Design and Architecture were invited to participate in a project called MILANOMIFAMALE (Milan Hurts Me) during International Milan Furniture Fair and Design Week "Salone del Mobile 2009" - a prestigious event held in th city considered to be the Mecca for the design world.
    </p>
    <p style="font-size:12px">
    Twenty-five art and design schools, including Bilkent University, London Central Saint Martins College of Art and Design, the Universities of Genoa, Florence, Rome and Turin, Design Academy Eindhoven, Dongduk Women's University in South Korea, Carnegie Mellon University, Rhode Island School of Design and Texas A & M University participated in the project. It was organized by NABA - Nuova Accademia di Bella Arti Milano - between April 22 and 27.
@@ -128,7 +131,18 @@
    </p>
  </div>
     <div  class="col-12"  style="text-align: center"> 
-       <img src="milan1.jpg" style="width:450px"> <img src="milan2.jpg" style="width:450px">
+         <div class="w3-content w3-display-container" style="text-align:center; vertical-align: middle; ">
+                  <img class="mySlides" src="milan5.jpg" style="width:100%">
+                  <img class="mySlides" src="milan3.jpg" style="width:100%">
+            
+                  <img class="mySlides" src="milan4.jpg" style="width:100%">
+                  <img class="mySlides" src="milan6.jpg" style="width:100%">
+                  <img class="mySlides" src="milan7.jpg" style="width:100%">
+   
+
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right"onclick="plusDivs(1)">&#10095;</button>
+           </div>
     </div>
  </div>
 </div>
@@ -145,33 +159,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script>
-           (function($){
-              $(window).on('read load resize', function(){
-                var theWidth = $(window).width();
-                var theHeigth = $(window).height();
-                $('#home').css({'width': theWidth, 'height' : theHeigth });
-                $('#projects').css({'width': theWidth, 'height' : theHeigth });
-                $('#publication').css({'width': theWidth, 'height' : theHeigth });
-                $('#contact').css({'width': theWidth, 'height' : theHeigth });
-                $('.projectThumbnail').css({'width': 200, 'height' : 200 });
-                $('.backgroundImg').css({'width': theWidth, 'padding':0px; 'margin': 0px; });
+            var slideIndex = 1;
+          showDivs(slideIndex);
 
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
 
-
-
-              });
-            })(jQuery);
-
-            // Add active class to the current button (highlight it)
-            var btnContainer = document.getElementById("myBtnContainer");
-            var btns = btnContainer.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-              });
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
             }
+            x[slideIndex-1].style.display = "block";  
+          }
     </script>
   </body>
 </html>4
