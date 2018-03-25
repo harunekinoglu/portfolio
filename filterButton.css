@@ -145,7 +145,13 @@ li>a, button>a{
   width:1250px;
 }
 
+.fhThumbnail{
+  padding:5px;
+  width:300px;
+  height:200px;
+  position:relative;
 
+}
 
 .projectThumbnail{
   padding:5px;
