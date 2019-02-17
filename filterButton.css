@@ -151,19 +151,25 @@ li>a, button>a{
   height:200px;
   position:relative;
 
+
 }
 
 .projectThumbnail{
-  padding:5px;
+/*  margin:5px;
   width:200px;
-  height:200px;
+  height:200px;*/
   position:relative;
+  border:1px solid #021a40;
 }
 
 .outer{
+  width:10vw;
+  height:10vw;
   display:block;
   position:relative;
 }
+
+
 
 .inner {
   background: white;

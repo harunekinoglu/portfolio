@@ -1,21 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <!-- my CSS -->
 <link rel="stylesheet" href="filterButton.css">
 <link rel="stylesheet" href="slideshow.css">
 <!-- my JS -->
 <script src="filterButton.js"></script>
+
+<!-- navigation to import header page -->
+<script> 
+    $(function(){
+      $("#head").load("header.html"); 
+      alert("testing");
+    });
+</script> 
     
 <title>Space Across Scales | Harun Ekinoglu</title>
 </head>
@@ -25,17 +35,24 @@
 
 
 <body>  
+<div id="head"></div>
+<!-- <link rel="import" href="header.html"> -->
+<!-- <iframe style="width:100%;height:100%;outline:none" src="header.html" seamless></iframe> -->
+
+<!-- <object type="text/html" data="header.html">
+<p>backup content</p>
+</object> -->
 <section style="height:auto;" id="home">  
 <div style="padding-top:50px">
 
 <div style="text-align: center; ">
 <br>
-<!-- <h2 style="letter-spacing:0.3em;">&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2> -->
+<h2 style="letter-spacing:0.3em;">&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2> 
 <h2 style="letter-spacing:0.3em;">Space Across Scales</h2>
-<h1 style="font-size:12px; line-height:1.2em; text-align:center;"><span style="font-weight:normal;"><span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;"><span style="font-size:12px;"><span style="letter-spacing:0.2em;"><span >Urban Design, Urban Development, Advanced Spatial Analysis, Policy Design |&nbsp;</span></span><span class="color_14"><span style="letter-spacing:0.2em;">Harun Ekinoglu</span></span></span></span></span></h1>
+<h1 style="font-size:12px; line-height:1.2em; text-align:center;"><span style="font-weight:normal;"><span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;"><span style="font-size:12px;"><span style="letter-spacing:0.2em;"><span >Urban Design, Urban Development, Advanced Spatial Analysis, Policy Design |&snbsp;</span></span><span class="color_14"><span style="letter-spacing:0.2em;">Harun Ekinoglu</span></span></span></span></span></h1>
 </div>
 <hr style="padding: 0px; margin: 0px">
-<!-- Nav tabs -->  
+<!-- nav tab -->
     <div class="container" style="padding-top:0px;margin-top:0px; font-size:12px">
     <div class="row">
     <div class="col"></div>
@@ -100,45 +117,62 @@
     </div>
     </div>
     </div>
-</div>
+</div> 
 <br>
 <div class="container">
  
   <h5>Beyazit Square Design | <span style="font-size : 14px">Urban Landscape Design</h5>
-   <div> 
+  <div> 
     <!-- photo slide -->
 
-    <div class="containerSlideShow">
+    <div class="containerSlideShow" style="">
 
   <!-- Full-width images with number text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-      <img src="beyazit2.png" style="width:100%">
-  </div>
+
 
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
+    <div class="numbertext">1 / 9</div>
       <img src="beyazit3.png" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
+    <div class="numbertext">2 / 9</div>
       <img src="beyazit4.png" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
+    <div class="numbertext">3 / 9</div>
       <img src="beyazit5.png" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
+    <div class="numbertext">4 / 9</div>
       <img src="beyazit6.png" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
+    <div class="numbertext">5 / 9</div>
       <img src="beyazit7.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 9</div>
+      <img src="beyazit8.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 9</div>
+      <img src="beyazit9.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">8 / 9</div>
+      <img src="beyazit10.png" style="width:100%">
+  </div>
+
+    <div class="mySlides">
+    <div class="numbertext">9 / 9</div>
+      <img src="beyazit2.png" style="width:100%;length:98%">
   </div>
 
   <!-- Next and previous buttons -->
@@ -147,19 +181,17 @@
 
   <!-- Image text -->
   <div class="caption-container">
-    <p id="caption"></p>
+    <p id="caption">testing</p>
   </div>
 
   <!-- Thumbnail images -->
   <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="beyazit2.png" style="width:100%" onclick="currentSlide(1)" alt="words">
-    </div>
+  
     <div class="column"> 
-      <img class="demo cursor" src="beyazit3.png" style="width:100%" onclick="currentSlide(2)" alt="words">
+      <img class="demo cursor" src="beyazit3.png" style="width:100%;length:102%" onclick="currentSlide(2)" alt="words">
     </div>
     <div class="column">
-      <img class="demo cursor" src="beyazit4.png" style="width:100%" onclick="currentSlide(3)" alt="words">
+      <img class="demo cursor" src="beyazit4.png" style="width:100%;length:102%" onclick="currentSlide(3)" alt="words">
     </div>
     <div class="column">
       <img class="demo cursor" src="beyazit5.png" style="width:100%" onclick="currentSlide(4)" alt="words">
@@ -169,6 +201,18 @@
     </div> 
     <div class="column">
       <img class="demo cursor" src="beyazit7.png" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="beyazit8.png" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="beyazit9.png" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="beyazit10.png" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="beyazit2.png" style="width:100%;length:95%" onclick="currentSlide(1)" alt="words">
     </div>
   </div>
 </div>
@@ -230,7 +274,7 @@
   <p style="font-size:8px">Copyright @ Harun Ekinoglu 2017</p>
 
 <div>
-</section>
+  </section> 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -272,4 +316,4 @@
           
     </script>
   </body>
-</html>4
+</html>
