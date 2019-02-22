@@ -29,7 +29,7 @@ img{
 
 
 .inner {
-  background: red;
+  background: white;
   height: 30%;
   width: 100%;
   opacity: 0;
@@ -70,5 +70,9 @@ img{
   margin-left: 5%;
 }
 
+.breadcrumb{
+  margin-left:10%;
+  background-color: white;
 
+}
 
