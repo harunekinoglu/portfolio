@@ -1,0 +1,74 @@
+
+.levelRow{
+  margin-right:0%;
+  margin-left:15%;
+  margin-top: 5%;
+}
+
+.level1{
+  padding:10px;
+  display:inline-block;
+  width:16%;
+}
+
+img{
+   
+}
+
+.projectThumbnail{
+  /*position:relative;*/
+  border-right:1px solid black;
+  width:100%;
+}
+
+.outer{
+  display:block;
+  position:relative;
+}
+
+
+
+.inner {
+  background: red;
+  height: 30%;
+  width: 100%;
+  opacity: 0;
+  /*top: 180px;*/
+  /*left: 0;*/
+  position: absolute;
+  padding: 5px;
+  transition: opacity .5s;
+}
+/* line 25, ../sass/style.scss */
+.outer .inner a {
+  color:gray;
+  text-align: center;
+  font-size:12px;
+  vertical-align: middle;
+}
+
+.inner p{
+  text-align: center;
+  color:gray;
+  text-align: center;
+  font-size:12px;
+  vertical-align: middle;   
+
+}
+/* line 34, ../sass/style.scss */
+.outer:hover .inner {
+  opacity: .9;
+  transition: opacity .5s;
+}
+
+
+.projectImg{
+  width:600px;
+}
+
+.header{
+  margin-left: 5%;
+}
+
+
+
