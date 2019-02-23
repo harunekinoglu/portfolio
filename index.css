@@ -11,6 +11,28 @@
   width:16%;
 }
 
+.level2Row{
+  margin-right:0%;
+  margin-left:10%;
+  margin-top: 5%;
+}
+
+.level2RowPolicy{
+  margin-right:0%;
+  margin-left:20%;
+  margin-top: 5%;
+}
+
+.level2{
+  padding:10px;
+  display:inline-block;
+  width:13%;
+}
+
+policy{
+  margin-left: 20%;
+}
+
 img{
    
 }
@@ -73,6 +95,7 @@ img{
 .breadcrumb{
   /*margin-left:10%;*/
   background-color: white;
+  font-size: 12px;
 
 }
 
