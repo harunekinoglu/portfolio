@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- my CSS -->
+<link rel="stylesheet" href="filterButton.css">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="index.css">
+
+<!-- my JS -->
+<script src="filterButton.js"></script>
+
+    
+<title>Space Across Scales | Harun Ekinoglu</title>
+</head>
+
+<body>  
+<div class="header" style="text-align:left;">
+    <br>
+    <div style="letter-spacing:0.1 dem;font-size:32px">Harun Ekinoglu, Ph.D. | <span style="font-size:16px; line-height:1.2em;">Urban Designer, Landscape Architect</span>
+    </div>
+</div>
+<hr>
+<!-- nav tab -->
+<div class="container">
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>>><a href="architectprojects.html">Architect Projects</a> >>
+        <h5>Mersin Waterfront Urban Design Project | <span style="font-size : 14px">Urban Landscape Design</h5>
+    </div>
+
+  <!-- photo slide -->
+  <div class="containerSlideShow" style="">
+  <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="M1.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="M2.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="M3.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="M4.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="M5.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="M6.jpg" style="width:60%">
+        </div>
+
+  <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption">Description</p>
+        </div>
+
+  <!-- Thumbnail images -->
+  <thumbnail class="row">
+    <div class="column"> 
+      <img class="demo cursor" src="M1.jpg" style="width:100%;" onclick="currentSlide(2)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="M2.jpg" style="width:100%;" onclick="currentSlide(3)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="M3.jpg" style="width:100%" onclick="currentSlide(4)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="M4.jpg" style="width:100%" onclick="currentSlide(5)" alt="words">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="M5.jpg" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="M6.jpg" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+  </thumbnail>
+</div> <!--end of slideshow container-->
+
+<word>
+  <!-- <p class="projectSection">The history of Beyazit Square and its evolution</p>
+  <p style="font-size: 12px"> Beyazit Square was, and is, one of the most historic and symbolic squares of Istanbul Peninsula, throughout the history. The square exists on the third hill of the Historic Peninsula (Freely, 2011, p. 183). The historical significance of the square dates back to the Roman period and known as Forum Tauri and Forum Theodosius in Byzantium period (Ayvazoglu, 2012) (Müller-Wiener, 2002). The square exists at the intersection of significant urban elements that make historic Istanbul image.</p>
+
+  <p style="font-size: 12px"> Beyazit Square experienced a serious demolishing interventions from the mid-20th century onwards urbanization resulting in a vast destruction of the existing built city form. Scholars (Müller-Wiener, 2002), (Eyice & Kuban, 1993), (Ayvazoglu, 2012) note that the most destructive intervention upon the square occurred in 1950’s through the implementation of the Prost plan, which gave priority to the motor-vehicle traffic. The enlargement and downing of the Ordu Street in the southbound of the square resulted in not only a massive fragmentation between the street and the square but also a remarkable change in the adjacent built environment of the square. In addition the Northwest access to the square, Vezneciler Street was also enlarged through a vast amount of massive destruction as shown in below Figure 6. Today one can still recognize the remaining parts and the fragments of the historic buildings on the site as seen in below Figure 6 street views (IMM, 2012). Today, the architectural elements that make the square’s identity are foremost the Istanbul University’s main gate, the Beyazid Mosque Complex, the State Library of Beyazid and the Madrasa (Ayvazoglu, 2012). Spatial assessment reports that have been developed by the Metropolitan Municipality of Istanbul (IMM, 2012) and by the Protection Board for Cultural Assets (2013) point out to the poor spatial organization of the square due to remarkable change that the square faced within the last decades.</p>
+
+  <div><img src="beyazit1.png"  style="width:500px;">
+      <div><p style="font-size: 9px">Figure: Enlarged Vezneciler (Upper-Left) and Ordu (Upper-Right) Street Views. Beyazit Square Aerial Views in 1946(Middle-Left), 1966(Middle-Right), 1982(Lower-Left) and 2013(Lower-Right) (IMM, 2012). Source from <a href="https://www.journalagent.com/planlama/pdfs/PLAN-35744-RESEARCH_ARTICLE-EKINOGLU.pdf">here</a>.</p></div>
+  </div>
+  <!-- <br> -->
+  <!-- <p class="projectSection">Design Process</p>
+  <ul style="font-size:12px">
+   <li> The potential of the entire area to establish smooth relationship witht eh urban character and the fragmented structure in the vincinity</li>
+   <li>The programs with which it is equpped with as a public space, its flexiblity to allow momentary/spontaneous activities; thus its potential to host diverse and unplanned events</li>
+   <li>Organization of open areas and their relationship with the coast and the dense urban fabric in the background</li>
+   <li>Whether there is a memorable image of the entire area and the relationship of that image with the Historical Peninsula as a whole</li>
+  </ul>
+
+  <p class="projectSection">Urban Design Project</p> 
+  <p style="font-size:12px">The project in collaboration with various stakeholder aimed to develop a holistic design approach for the square that undertakes the square’s great historic background, present dynamics, obstacles, potentials and future envisioning in Istanbul Peninsula and entire metropolitan area. The landmark square lays in the intersection of masterpiece entrance of Istanbul University at north, Ordu the Ottoman imperial street at south, The Grand bazaar -  one of the oldest and largest grand bazaars of the world – at west and Suleimaniye neighborhood where the Great Architect Sinan’s masterpiece Suleimanie mosque exists at east. </p>
+
+  <p style="font-size:12px">Beyazıt Square the most prominent public space of the historic center of İstanbul - over the course of the last century - has lost its spatial relationship with its environs, has become functionally obscure, causing the square to be isolated and dilapidated; a mere neglected space far from reflecting the importance of the historical monuments of the Betyazıt Complex, and far from functioning as a vibrant public space. </p>
+
+  <p style="font-size:12px">The project aims at resolving the spatial and functional problems of the square, by a holistic approach, and a design  project that aims at a modern and accessible public space that highlights the historic significance of the Beyazıt Complex and Beyazıt Square. </p>  -->
+</word>
+
+
+
+</div>
+<br>
+<div style="text-align: center">
+  <p style="font-size:8px">Copyright @ Harun Ekinoglu 2019</p>
+
+<div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script>
+    // slideshow
+              var slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          
+    </script>
+  </body>
+</html>
