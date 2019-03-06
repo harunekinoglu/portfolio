@@ -1,18 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <!-- my CSS -->
 <link rel="stylesheet" href="filterButton.css">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="index.css">
+
 <!-- my JS -->
 <script src="filterButton.js"></script>
     
@@ -25,102 +30,119 @@
 
 <body>  
 <section style="height:auto;" id="home">  
-<div style="padding-top:50px">
+<div class="header" style="text-align:left;">
+    <br>
+    <div style="letter-spacing:0.1 dem;font-size:32px">Harun Ekinoglu, Ph.D. | <span style="font-size:16px; line-height:1.2em;">Urban Designer, Landscape Architect</span>
+    </div>
+</div>
 
-<div style="text-align: center; ">
-<br>
-<!-- <h2 style="letter-spacing:0.3em;">&nbsp;S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2> -->
-<h2 style="letter-spacing:0.3em;">Space Across Scales</h2>
-<h1 style="font-size:12px; line-height:1.2em; text-align:center;"><span style="font-weight:normal;"><span style="font-family:avenir-lt-w01_35-light1475496,sans-serif;"><span style="font-size:12px;"><span style="letter-spacing:0.2em;"><span >Urban Design, Urban Development, Advanced Spatial Analysis, Policy Design |&nbsp;</span></span><span class="color_14"><span style="letter-spacing:0.2em;">Harun Ekinoglu</span></span></span></span></span></h1>
-</div>
-<hr style="padding: 0px; margin: 0px">
-<!-- Nav tabs -->  
-    <div class="container" style="padding-top:0px;margin-top:0px; font-size:12px">
-    <div class="row">
-    <div class="col"></div>
-    <div class="col">
-    <nav class=" bg-faded" style="background-color: transparent; padding-top: 0px; margin-top:0px">
-    <ul class="nav">
-       <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-     </li>
-      <li>
-        <div class="nav-link dropdown">
-        <button class="dropbtn" >Professional</button>
-         <div class="dropdown-content">
-              <a href="gazi.html">2017 | Urban Design | Gaziosmanpaşa District-Küçükköy Square Urban Design Project</a> 
-              <a href="cityofDesign.html">2017 | Urban Design | UNESCO Creative Cities Network Program “City of Design” for Istanbul</a>
-              <a href="yenikapi.html">2015 | Urban Design | Yenikapı Transfer Point and Archaeo-Park Area Urban Design Project</a>
-              <a href="creative.html">2016 | Presentation | Urban Design in the Creative Intersection of Space, Culture and Identity</a> 
-              <a href="beyazit.html">2014 | Urban Design | Beyazit Square Urban Design Project </a>
-              <a href="workshop.html">2014 | Workshop  | Governance and Local Administration / Feasibility and Implementation </a>
-              <a href="taxi.html">2011 | Urban Design | Istanbul "Taxi of Tomorrow"</a>
-              
-         </div>
-         </div>
-      </li>
-      <li>
-        <div class="nav-link dropdown">
-        <button class="dropbtn" >Academic</button>
-         <div class="dropdown-content">
-              <a href="urbanMorphology.html">2017 | Dissertation | Measuring and Visualizing Urban Morphology Through Information Entropy Theory</a>
-              <a href="taxidesign.html">2017 | Research | Does favorite design lead to good design?: Taxi design competitions in Istanbul and New York City</a>
-              <a href="analyticalmeasuring.html">2017 | Research | Analytical measuring and visualization of spatio-temporal change in built environments: Beyazit Square case study area in Istanbul</a>
-              <a href="favdesign.html">2017 | Book | Favorite design vs. good design: Taxi design competitions in Istanbul and New York City</a>
-              <a href="spatialWholeness.html">2017 | Research | Modeling spatial wholeness in cities using information entropy theory</a> 
-              <a href="antakyaUnesco.html">2007 | Project | Award at Open UNESCO/UIA/Carleton University International Urban Design & Brief Competition - Antakya's Historical District Renewal Area</a>
-              <a href="jerusalem.html">2007 | Project | Just Jerusalm 2050 Urban Design</a>
-              <a href="antakya.html"> 2006 | Project | Antakya Historic French Park Landscape Restoration Project </a>
-         </div>
-         </div>
-      </li>
-       <li>
-        <div class="nav-link dropdown">
-        <button class="dropbtn" >Exhibitions</button>
-         <div class="dropdown-content">
-              <a href="exhibition1.html">2017 | Master Piece Projects Exhibition of Vedat Dalokay: a Prominent Turkish Architect</a>
-              <a href="exhibition2.html">2017 | Love & Hospitality at Milan</a>
-         </div>
-         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="publication.html">Publication</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resume.html">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-    </nav>
-    </div>
-    <div class="col">
-    </div>
-    </div>
-    </div>
-</div>
-<br>
+<hr>
+<!-- nav tab -->
 <div class="container">
- 
-  <h5>Gaziosmanpaşa District-Küçükköy Square | <span style="font-size : 14px">Urban Design</h5>
-   <div> 
-<!--      <img src="beyazitBackground.png" class="backgroundImg">
-     <p style="font-size:8px"> Beyazit Square Area</p> -->
-  </div>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>>><a href="architectprojects.html">Projects</a> >>
+         <h5>Gaziosmanpaşa District-Küçükköy Square</h5>
+    </div>
+
+    <!-- photo slide -->
+  <div class="containerSlideShow" style="">
+  <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="g6.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="g7.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="g8.jpg" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="g10.png" style="width:60%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g11.jpg" style="width:60%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g12.jpg" style="width:60%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g13.jpg" style="width:60%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g14.jpg" style="width:60%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g15.jpg" style="width:60%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g16.jpg" style="width:60%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="g17.jpg" style="width:60%">
+        </div>
+
+  <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+  <!-- Thumbnail images -->
+  <thumbnail class="row">
+    <div class="column"> 
+      <img class="demo cursor" src="g6.jpg" style="width:100%;" onclick="currentSlide(2)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="g7.jpg" style="width:100%;" onclick="currentSlide(3)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="g8.jpg" style="width:100%" onclick="currentSlide(4)" alt="words">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="g10.png" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="g11.jpg" style="width:100%" onclick="currentSlide(6)" alt="words">
+    </div>
+        <div class="column">
+      <img class="demo cursor" src="g12.jpg" style="width:100%" onclick="currentSlide(5)" alt="words">
+    </div> 
+  </thumbnail>
+</div> <!--end of slideshow container-->
+
+
 
   <p style="font-size: 12px">  A total 25.628 Sqm neighborhood square is in a highly populated yet underdeveloped neighborhood in Gaziosmanpaşa district of Istanbul located in the north of E5 and south of TEM international highways in European side of the city.  The square has major problems in terms of pedestrian and vehicular traffic, accessibility, lack of environmental maintenance, dereliction, lost place identity and so on. The urban design project that has been developed draws a subtle scenario of inviting the nieghborhood’s residents and everyone from every age and social background to the square to enjoy their everyday lives in a sociable way and in a healthy, safe and accessible square. 
 </p>
 
 
-
+<!-- 
   <div><img src="g1.jpg"  style="width:600px;">
-     <!--  <div><p style="font-size: 8px">street view</p></div> -->
+      <div><p style="font-size: 8px">street view</p></div>
   </div>  
-  <br>
+  <br> -->
 
 
-
+<!-- 
 <div><img src="g2.png" class="projectImg" style="width:600px;"><div><p style="font-size: 8px"></p></div> </div>
 <br>
 <div><img src="g3.png" class="projectImg" style="width:600px;"><div><p style="font-size: 8px">street view</p></div> </div>
@@ -128,11 +150,11 @@
 <div><img src="g4.png" class="projectImg"><div><p style="font-size: 8px">street view</p></div> </div>
 <br>
 <div><img src="g5.png" class="projectImg"><div><p style="font-size: 8px">street view</p></div></div>
-<br>
-<p class="projectSection">İstanbul Gaziosmanpaşa District-Küçükköy Square Urban Design Project: Transportation Proposal</p>
+<br> -->
+<!-- <p class="projectSection">İstanbul Gaziosmanpaşa District-Küçükköy Square Urban Design Project: Transportation Proposal</p> -->
 
 
-<br>
+<!-- <br>
 <div><img src="g6.jpg" class="projectImg"></div>
 <br>
 <div><img src="g7.jpg" class="projectImg"></div>
@@ -154,12 +176,14 @@
 <div><img src="g16.jpg" class="projectImg"></div>
 <br>
 <div><img src="g17.jpg" class="projectImg"></div>
-<br>
+<br> -->
 
 </div>
-<br>
+
+
+
 <div style="text-align: center">
-  <p style="font-size:8px">Copyright @ Harun Ekinoglu 2017</p>
+  <p style="font-size:8px">Copyright @ Harun Ekinoglu 2019</p>
 
 <div>
 </section>
@@ -169,8 +193,39 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script>
+   <script>
+    // slideshow
+              var slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
           
     </script>
   </body>
-</html>4
+</html>

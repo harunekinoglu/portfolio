@@ -7,14 +7,17 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script src="http://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <!-- my CSS -->
 <link rel="stylesheet" href="filterButton.css">
 <link rel="stylesheet" href="slideshow.css">
 <link rel="stylesheet" href="index.css">
+
 <!-- my JS -->
 <script src="filterButton.js"></script>
     
@@ -35,8 +38,8 @@
 <!-- nav tab -->
 <div class="container">
     <div class="breadcrumb">
-        <a href="index.html">Home</a>>><a href="architectprojects.html">Architect Projects</a> >>
-        <h5>Award at Open UNESCO/UIA/Carleton University International Urban Design & Brief Competition| <span style="font-size : 14px">Urban Landscape Design</h5>
+        <a href="index.html">Home</a>>><a href="architectprojects.html">Projects</a> >>
+        <h5>Award at Open UNESCO/UIA/Carleton University International Urban Design & Brief Competition</h5>
     </div>
 
   <!-- photo slide -->
@@ -44,22 +47,22 @@
   <!-- Full-width images with number text -->
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-            <img src="U1.jpg" style="width:100%">
+            <img src="U1.jpg" style="width:60%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-            <img src="U2.jpg" style="width:100%">
+            <img src="U2.jpg" style="width:60%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-            <img src="U3.jpg" style="width:100%">
+            <img src="U3.jpg" style="width:60%">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-            <img src="U4.jpg" style="width:100%">
+            <img src="U4.jpg" style="width:60%">
         </div>
 
   <!-- Next and previous buttons -->
@@ -67,9 +70,9 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
   <!-- Image text -->
-        <div class="caption-container">
+    <!--     <div class="caption-container">
           <p id="caption"></p>
-        </div>
+        </div> -->
 
   <!-- Thumbnail images -->
   <thumbnail class="row">
@@ -152,8 +155,40 @@ Antakya’s Historical District; Antioch Being counted among Rome, Alexandria, a
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script>
-           
+  <script>
+    // slideshow
+              var slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          
     </script>
+    
   </body>
 </html>
