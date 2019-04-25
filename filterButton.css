@@ -228,3 +228,16 @@ img{
 
 
 
+.levelRow{
+  margin-right:0%;
+  margin-left:25%;
+  margin-top: 5%;
+}
+
+.breadcrumb{
+  /*margin-left:10%;*/
+  background-color: white;
+  font-size: 12px;
+
+}
+
